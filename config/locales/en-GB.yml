@@ -1,6 +1,9 @@
 ---
 en-GB:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "Email message"
     errors:
       messages:
         record_invalid: 'Validation failed: %{errors}'

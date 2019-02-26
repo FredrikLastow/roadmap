@@ -1,6 +1,9 @@
 ---
 ro:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "Mesaj e-mail"
     errors:
       messages:
         record_invalid: Validare nereuşită %{errors}

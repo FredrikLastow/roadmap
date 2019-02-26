@@ -1,6 +1,9 @@
 ---
 fi:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "Sähköpostiviesti"
     errors:
       messages:
         record_invalid: 'Validointi epäonnistui: %{errors}'

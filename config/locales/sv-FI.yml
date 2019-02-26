@@ -1,6 +1,9 @@
 ---
 sv-FI:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "E-postmeddelande"
     errors:
       messages:
         record_invalid: 'Ett fel uppstod: %{errors}'

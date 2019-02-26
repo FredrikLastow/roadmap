@@ -1,6 +1,9 @@
 ---
 el:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "Μήνυμα ηλεκτρονικού ταχυδρομείου"
     errors:
       messages:
         record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'

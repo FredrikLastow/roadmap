@@ -1,6 +1,9 @@
 ---
 de:
   activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "E-Mail Nachricht"
     errors:
       messages:
         record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'

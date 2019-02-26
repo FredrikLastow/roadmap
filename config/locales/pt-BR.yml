@@ -3,6 +3,10 @@
 # [+Copyright:+] Digital Curation Centre and University of California Curation Center
 
 pt-BR:
+  activerecord:
+    attributes:
+      org:
+        feedback_email_msg: "Mensagem de email"
   date:
     formats:
       # Use the strftime parameters for formats.
