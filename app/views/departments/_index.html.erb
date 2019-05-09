@@ -1,0 +1,19 @@
+<% if departments.count > 0 %>
+  <div class="table-responsive">
+    <table class="table table-hover" id="departments">
+      <thead>
+        <tr>
+          <th scope="col"><%= _('School or Department') %></th>
+          <th scope="col"><%= _('Code') %></th>
+          <th scope="col"><%= _('Edit/Save/Cancel') %></th>
+          <th scope="col"><%= _('Delete') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% departments.each do |dept| %>
+          <%= render partial: '/departments/department', locals: { department: dept, org: org } %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end%>

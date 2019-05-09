@@ -1,0 +1,35 @@
+
+<tr id='department-<%= department.id %>'>
+  <td>
+    <input type='text' class='dept-name' value='<%= department.name %>' style='border:0; width:100%;' disabled>
+  </td>
+  <td>
+    <input type='text' class='dept-code' value='<%= department.code %>' style='border:0; width:100%;' disabled>
+  </a>
+  </td>
+  <td>
+    <a data-method='put'
+       data-url='<%= create_or_update_department_path %>'
+       data-dept-id='<%= department.id %>'
+       data-org-id='<%= org.id %>'
+       class='btn btn-primary save-edited-department'
+       style='display: none; margin-right: 0.25em;'>
+    <%= _('Save') %>
+    <a data-edit-text="<%= _('Edit') %>"
+       data-cancel-text="<%= _('Cancel') %>"
+       data-dept-name='<%= department.name %>'
+       data-dept-code='<%= department.code %>'
+       class='edit-department btn btn-primary'>
+      <%= _('Edit') %>
+    </a>
+  </td>
+  <td>
+   <a data-confirm="<%= _('You are about to delete "%{dept_name}". Are you sure?') % { dept_name: department.name} %>"
+      data-method='delete'
+      data-url='<%= department_path(department.id) %>'
+      data-org-id='<%= org.id %>'
+      class='btn btn-primary delete-department'>
+      <%= _('Delete') %>
+    </a>
+  </td>
+</tr>
